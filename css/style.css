@@ -444,12 +444,6 @@ section { padding: 80px 24px; }
     padding: 13px 18px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
-    transition: border-color .18s, box-shadow .18s;
-}
-
-.services-list li:hover {
-    border-color: var(--teal);
-    box-shadow: 0 0 0 3px rgba(20,151,171,.08);
 }
 
 .services-list li svg {
