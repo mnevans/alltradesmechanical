@@ -3,256 +3,321 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="All Trades Mechanical Inc. — Commercial HVAC, electrical, refrigeration, ice machines, and restaurant appliance repair. Serving Kitsap, Mason, Pierce & King Counties since 1992.">
+    <title>All Trades Mechanical Inc. | Commercial HVAC &amp; Refrigeration</title>
 
-    <title>All Trades Mechanical Inc.</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- Open Graph (social sharing) -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="All Trades Mechanical Inc.">
+    <meta property="og:description" content="Commercial HVAC, electrical, refrigeration, ice machines, and restaurant appliance repair. Serving the Pacific Northwest since 1992.">
+    <meta property="og:image"       content="img/logo.png">
 
-    <script src="https://kit.fontawesome.com/45d87cc51e.js" crossorigin="anonymous"></script>
+    <!-- Preload hero background for faster LCP -->
+    <link rel="preload" as="image" href="img/van2.webp">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro" rel="stylesheet">
-
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body id="page-top">
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll brand-full" href="#page-top">All Trades Mechanical</a>
-                <a class="navbar-brand page-scroll brand-mobile" href="#page-top">ATM</a>
-                <a href="https://securepayment.link/alltradesmechanical/" class="btn btn-primary pay-button">Pay online</a>
-            </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#gallery">Gallery</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+    <!-- Header: logo left, buttons + nav right -->
+    <header id="topbar">
+        <div class="topbar-container">
+            <a href="#page-top" class="topbar-logo scroll-link">
+                <img src="img/logo.png" alt="All Trades Mechanical Inc.">
+            </a>
+            <nav class="topbar-nav">
+                <ul>
+                    <li><a href="#about" class="scroll-link">About</a></li>
+                    <li><a href="#services" class="scroll-link">Services</a></li>
+                    <li><a href="#gallery" class="scroll-link">Our Work</a></li>
+                    <li><a href="#contact" class="scroll-link">Contact</a></li>
+                    <li><a href="#payment" class="scroll-link nav-tab-cta">Pay Online</a></li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        <!-- /.container -->
-    </nav>
+        <!-- Mobile dropdown -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="scroll-link">About</a></li>
+            <li><a href="#services" class="scroll-link">Services</a></li>
+            <li><a href="#gallery" class="scroll-link">Our Work</a></li>
+            <li><a href="#contact" class="scroll-link">Contact</a></li>
+            <li><a href="#payment" class="scroll-link">Pay Online</a></li>
+        </ul>
+    </header>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <img src="img/atm_logo_small.png" width="100%">
-                <hr>
-                <br/>
-                <h4 class="tagline">COMMERCIAL REFRIGERATION <i class="fa fa-caret-up" style="color:#34007c"></i>  COMMERCIAL ICE MACHINES<br/>COMMERCIAL HVAC <i class="fa fa-caret-up" style="color:#34007c"></i> COMMERCIAL RESTAURANT APPLIANCE REPAIRS </h4>
-                <br/>
-                <br/>
-                <img src="img/atm_30years.png" width="25%">
+    <!-- Hero -->
+    <header id="hero">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Serving the Pacific Northwest Since 1992</p>
+            <h1>Commercial HVAC, Electrical,<br>and Refrigeration Experts</h1>
+            <p class="hero-sub">Service, installation, and repairs for commercial kitchens, ice machines,<br class="hero-br"> walk-in boxes, and HVAC systems.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary scroll-link">Get a Free Estimate</a>
+                <a href="tel:3608749826" class="btn btn-outline">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 5a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                    (360) 874-9826
+                </a>
             </div>
         </div>
     </header>
 
+    <!-- Stats strip -->
+    <div class="stats-strip">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">30+</span>
+                <span class="stat-label">Years in Business</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">Licensed</span>
+                <span class="stat-label">&amp; Fully Insured</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">Gov. Cleared</span>
+                <span class="stat-label">Federal Base Access</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">Nationwide</span>
+                <span class="stat-label">Installation Coverage</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
     <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <hr class="primary">
-                </div>
+        <div class="section-container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <div class="section-rule"></div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-info-circle fa-5x" style="color:#1497ab"></i>
-                        <br/>
-                        <br/>
-                        <p class="text-left">
-                        Founded in 1992, All Trades Mechanical Inc. is a leader in the mechanical contracting industry.
-                        Our team is comprised of service and installation experts with the ability to construct multiple projects of different scopes and in various locations.
-                        We work throughout the United States with security clearance for access to government bases.
-                        </p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                     </div>
+                    <h3>Who We Are</h3>
+                    <p>Founded in 1992, All Trades Mechanical Inc. is a leader in the mechanical contracting industry. Our team of service and installation experts handles projects of varying scope across multiple locations — including government facilities with full security clearance.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-user fa-5x" style="color:#1497ab"></i>
-                        <br/>
-                        <br/>
-                        <p class="text-left">
-                            <strong>Our customer base includes:</strong>
-                            <br/>
-                            School districts, hospitals, federal government facilities, commercial office buildings, restaurants and bars, bank buildings, yacht clubs, county jails, correction facilities, catering facilities, bowling alleys, food banks and commercial fishing boats.
-                        </p>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
+                    <h3>Who We Serve</h3>
+                    <p>Our customers include school districts, hospitals, federal government facilities, commercial office buildings, restaurants and bars, bank buildings, yacht clubs, county jails, correction facilities, catering facilities, bowling alleys, food banks, and commercial fishing boats.</p>
                 </div>
-                <div class="col-lg-4 col-md-4 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-globe fa-5x" style="color:#1497ab"></i>
-                        <br/>
-                        <br/>
-                        <p class="text-left">
-                            <strong>Service areas include, but are not limited to:</strong>
-                            <br/>
-                            Kitsap, Mason, Pierce &amp; King Counties
-                        </p>
-                        <br/>
-                        <p class="text-left">
-                            Our installation team does work in these areas, as well as nationally.
-                        </p>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                     </div>
+                    <h3>Where We Work</h3>
+                    <p>We provide service throughout Kitsap, Mason, Pierce &amp; King Counties. Our installation team takes on national projects as well, working with clients across the United States.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <hr class="primary">
-                </div>
+    <!-- Services -->
+    <section id="services" class="section-alt">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Services</h2>
+                <div class="section-rule"></div>
+                <p class="section-intro"><a href="#contact" class="scroll-link">Contact us</a> for a free estimate on sales and installation. You can also <a href="#payment" class="scroll-link">make a payment online</a>.</p>
             </div>
-            <br/>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h4>
-                        <a class="page-scroll" href="#contact">Contact us</a> for a free estimate on sales and installation!
-                        <br/>
-                        <br/>
-                        You can also <a target="_blank" href="https://securepayment.link/alltradesmechanical/">make a payment online</a>.
-                    </h4>
+            <div class="services-layout">
+                <div class="services-img-wrap">
+                    <img src="img/van.webp" alt="All Trades Mechanical service vehicle">
                 </div>
-                <br />
-                <div class="col-lg-12 services-section">
-                  <div class="col-lg-6 services-img">
-                      <img src="img/van.png" width="100%">
-                  </div>
-                  <div class="col-lg-6">
-                        <h3>Service, repairs, sales and installation for:</h3>
-                        <br />
-                        <ul>
-                          <li><p>Commercial Dish Machines/Flight Machines</p></li>
-                          <li><p>Commercial Hoods</p></li>
-                          <li><p>Commercial HVAC</p></li>
-                          <li><p>Commercial Ice Machines</p></li>
-                          <li><p>Commercial Kitchen Appliances</p></li>
-                          <li><p>Commercial Refrigeration</p></li>
-                          <li><p>Commercial Walk-In Boxes</p></li>
-                        </ul>
-                  </div>
+                <div class="services-list-wrap">
+                    <h3>Service, repairs, sales &amp; installation for:</h3>
+                    <ul class="services-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Commercial Dish Machines / Flight Machines
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Commercial Hoods
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Commercial Electricians
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Commercial HVAC
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Commercial Ice Machines
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Commercial Kitchen Appliances
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Commercial Refrigeration
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Commercial Walk-In Boxes
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Gallery -->
     <section id="gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Gallery</h2>
-                    <hr class="primary">
-                    <br/>
+        <div class="section-container section-container--narrow">
+            <div class="section-header">
+                <h2>Our Work</h2>
+                <div class="section-rule"></div>
+            </div>
+            <div class="gallery">
+                <div class="gallery-preview-wrapper">
+                    <button class="gallery-chevron" id="galleryPrev" aria-label="Previous image">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                    </button>
+                    <div class="preview">
+                        <img id="preview" src="img/gallery/gallery1.webp" alt="Gallery image">
+                    </div>
+                    <button class="gallery-chevron" id="galleryNext" aria-label="Next image">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </button>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <div class="gallery" align="center">
-                        <div class="thumbnails">
-                            <img onmouseover="getElementById('preview').src=getElementById('gallery1').src" id="gallery1" src="img/gallery1.png" alt="" />
-                            <img onmouseover="getElementById('preview').src=getElementById('gallery2').src" id="gallery2" src="img/gallery2.png" alt="" />
-                            <img onmouseover="getElementById('preview').src=getElementById('gallery3').src" id="gallery3" src="img/gallery3.png" alt="" />
-                            <img onmouseover="getElementById('preview').src=getElementById('gallery4').src" id="gallery4" src="img/gallery4.png" alt="" />
-                            <img onmouseover="getElementById('preview').src=getElementById('gallery5').src" id="gallery5" src="img/gallery5.png" alt="" />
-                            <img onmouseover="getElementById('preview').src=getElementById('gallery6').src" id="gallery6" src="img/gallery6.png" alt="" />
-                        </div>
-                        <div class="preview" align="center">
-                            <img id="preview" src="img/gallery1.png" alt=""/>
-                        </div>
-                    </div> <!-- Close the gallery div -->
-
+                <div class="thumbnails">
+                    <img class="gallery-thumb active-thumb" src="img/gallery/gallery1.webp" alt="Gallery 1">
+                    <img class="gallery-thumb" src="img/gallery/gallery2.webp" alt="Gallery 2">
+                    <img class="gallery-thumb" src="img/gallery/gallery3.webp" alt="Gallery 3">
+                    <img class="gallery-thumb" src="img/gallery/gallery4.webp" alt="Gallery 4">
+                    <img class="gallery-thumb" src="img/gallery/gallery5.webp" alt="Gallery 5">
+                    <img class="gallery-thumb" src="img/gallery/gallery6.webp" alt="Gallery 6">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contact</h2>
-                    <hr class="primary">
-                </div>
+    <!-- Contact -->
+    <section id="contact" class="section-alt">
+        <div class="section-container section-container--narrow">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <div class="section-rule"></div>
             </div>
-            <br/>
-            <!-- <div class="row text-center">
-              <a href="https://securepayment.link/alltradesmechanical/" class="btn btn-primary pay-button">Pay your bill online</a>
-            </div> -->
-            <br/>
-            <div class="row">
-                <div class="col-lg-6 text-center contact-row">
-                    <h4><strong>Questions or inquiries?</strong></h4>
-                    <p><a href="mailto:info@alltradesmechanical.com">Email us</a> or call us at <a href="tel:360-874-9826">(360) 874-9826</a></p>
-                    <br/>
-                    <h4><strong>Service hours</strong></h4>
-                    <p>Monday - Friday, 7:30AM - 4:00PM</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 5a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                    </div>
+                    <h3>Get in Touch</h3>
+                    <p><a href="tel:3608749826">(360) 874-9826</a></p>
+                    <p><a href="mailto:info@alltradesmechanical.com">info@alltradesmechanical.com</a></p>
+                    <div class="card-rule"></div>
+                    <h4>Service Hours</h4>
+                    <p>Monday – Friday<br>7:30 AM – 4:00 PM</p>
                 </div>
-                <div class="col-lg-6 text-center">
-                    <h4><strong>Mailing address</strong></h4>
-                    <p>PO Box 2446 Gig Harbor, WA 98335</p>
-                    <br/>
-                    <h4><strong>Shipping address</strong></h4>
-                    <p>4590 SE Mile Hill Drive Port Orchard, WA 98366</p>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Locations</h3>
+                    <h4>Mailing Address</h4>
+                    <p>PO Box 2446<br>Gig Harbor, WA 98335</p>
+                    <div class="card-rule"></div>
+                    <h4>Shipping Address</h4>
+                    <p>4590 SE Mile Hill Drive<br>Port Orchard, WA 98366</p>
                 </div>
-            </div>
-            <br/>
-            <br/>
             </div>
         </div>
     </section>
 
+    <!-- Payment -->
+    <section id="payment">
+        <div class="section-container section-container--narrow">
+            <div class="section-header">
+                <h2>Pay Online</h2>
+                <div class="section-rule"></div>
+            </div>
+            <div class="payment-content">
+                <div class="payment-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                </div>
+                <p>We offer ACH and debit card processing as our preferred payment method — it keeps costs down for everyone. We also accept all major credit cards; a 3% convenience fee applies for credit card payments.</p>
+                <div class="payment-buttons">
+                    <a href="https://collectcheckout.com/r/lgg0w" target="_blank" rel="noopener" class="btn btn-primary">ACH &amp; Debit Card</a>
+                    <a href="https://quickclick.com/r/p3l0g" target="_blank" rel="noopener" class="btn btn-secondary">Credit Card</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="text-center">
-            <p>© 2026 All Trades Mechanical Inc.</p>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <p class="footer-brand">All Trades Mechanical Inc.</p>
+                    <p>Serving the Pacific Northwest since 1992. Licensed, insured, and security-cleared for government facilities.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about" class="scroll-link">About</a></li>
+                        <li><a href="#services" class="scroll-link">Services</a></li>
+                        <li><a href="#gallery" class="scroll-link">Our Work</a></li>
+                        <li><a href="#contact" class="scroll-link">Contact</a></li>
+                        <li><a href="#payment" class="scroll-link">Pay Online</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><a href="tel:3608749826">(360) 874-9826</a></p>
+                    <p><a href="mailto:info@alltradesmechanical.com">info@alltradesmechanical.com</a></p>
+                    <p>Mon–Fri: 7:30 AM – 4:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <p>© <span id="copyright-year"></span> All Trades Mechanical Inc. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/style.js"></script>
+    <!-- Lightbox modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <div class="lightbox-img-wrap">
+            <button class="lightbox-close" id="lbClose" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <button class="lightbox-prev" id="lbPrev" aria-label="Previous image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <img id="lbImg" src="" alt="Gallery image enlarged">
+            <button class="lightbox-next" id="lbNext" aria-label="Next image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+        </div>
+    </div>
 
+    <!-- Mobile sticky CTA (hidden on desktop) -->
+    <div class="mobile-cta">
+        <a href="tel:3608749826">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 5a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+            Call (360) 874-9826
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
-
 </html>
