@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="All Trades Mechanical Inc. — Commercial HVAC, electrical, refrigeration, ice machines, and restaurant appliance repair. Serving Kitsap, Mason, Pierce & King Counties since 1992.">
-    <title>All Trades Mechanical Inc. | Commercial HVAC, Electrical, &amp; Refrigeration</title>
 
     <link rel="canonical" href="https://alltradesmechanical.com">
 
@@ -86,13 +85,15 @@
 
 <body id="page-top">
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header: logo left, buttons + nav right -->
     <header id="topbar">
         <div class="topbar-container">
             <a href="#page-top" class="topbar-logo scroll-link">
                 <img src="img/logo.png" alt="All Trades Mechanical Inc.">
             </a>
-            <nav class="topbar-nav">
+            <nav class="topbar-nav" aria-label="Main">
                 <ul>
                     <li><a href="#about" class="scroll-link">About</a></li>
                     <li><a href="#services" class="scroll-link">Services</a></li>
@@ -101,12 +102,12 @@
                     <li><a href="#payment" class="scroll-link nav-tab-cta">Pay Online</a></li>
                 </ul>
             </nav>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
         </div>
         <!-- Mobile dropdown -->
-        <ul class="nav-links" id="navLinks">
+        <ul class="nav-links" id="navLinks" aria-hidden="true">
             <li><a href="#about" class="scroll-link">About</a></li>
             <li><a href="#services" class="scroll-link">Services</a></li>
             <li><a href="#gallery" class="scroll-link">Our Work</a></li>
@@ -115,21 +116,23 @@
         </ul>
     </header>
 
+    <main id="main-content">
+
     <!-- Hero -->
-    <header id="hero">
+    <section id="hero">
         <div class="hero-content">
             <p class="hero-eyebrow">Serving the Pacific Northwest Since 1992</p>
             <h1>Commercial HVAC, Electrical,<br>and Refrigeration Experts</h1>
             <p class="hero-sub">Service, installation, and repairs for commercial kitchens, ice machines,<br class="hero-br"> walk-in boxes, and HVAC systems.</p>
             <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary scroll-link">Get a Free Estimate</a>
+                <a href="#contact" class="btn btn-secondary scroll-link">Get a Free Estimate</a>
                 <a href="tel:3608749826" class="btn btn-outline">
-                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 5a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                    <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 5a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
                     (360) 874-9826
                 </a>
             </div>
         </div>
-    </header>
+    </section>
 
     <!-- Stats strip -->
     <div class="stats-strip">
@@ -163,21 +166,21 @@
             <div class="about-grid">
                 <div class="about-card">
                     <div class="about-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                     </div>
                     <h3>Who We Are</h3>
                     <p>Founded in 1992, All Trades Mechanical Inc. is a leader in the mechanical contracting industry. Our team of service and installation experts handles projects of varying scope across multiple locations — including government facilities with full security clearance.</p>
                 </div>
                 <div class="about-card">
                     <div class="about-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
                     <h3>Who We Serve</h3>
                     <p>Our customers include school districts, hospitals, federal government facilities, commercial office buildings, restaurants and bars, bank buildings, yacht clubs, county jails, correction facilities, catering facilities, bowling alleys, food banks, and commercial fishing boats.</p>
                 </div>
                 <div class="about-card">
                     <div class="about-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                     </div>
                     <h3>Where We Work</h3>
                     <p>We provide service throughout Kitsap, Mason, Pierce &amp; King Counties. Our installation team takes on national projects as well, working with clients across the United States.</p>
@@ -202,35 +205,35 @@
                     <h3>Service, repairs, sales &amp; installation for:</h3>
                     <ul class="services-list">
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                             Commercial Dish Machines / Flight Machines
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                             Commercial Hoods
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                             Commercial Electricians
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                             Commercial HVAC
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                             Commercial Ice Machines
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                             Commercial Kitchen Appliances
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                             Commercial Refrigeration
                         </li>
                         <li>
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                             Commercial Walk-In Boxes
                         </li>
                     </ul>
@@ -249,22 +252,34 @@
             <div class="gallery">
                 <div class="gallery-preview-wrapper">
                     <button class="gallery-chevron" id="galleryPrev" aria-label="Previous image">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
                     </button>
-                    <div class="preview">
-                        <img id="preview" src="img/gallery/gallery1.webp" alt="Gallery image">
-                    </div>
+                    <button class="preview" id="previewBtn" aria-label="View full size: Commercial walk-in cooler">
+                        <img id="preview" src="img/gallery/gallery1.webp" alt="Commercial walk-in cooler">
+                    </button>
                     <button class="gallery-chevron" id="galleryNext" aria-label="Next image">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
                     </button>
                 </div>
                 <div class="thumbnails">
-                    <img class="gallery-thumb active-thumb" src="img/gallery/gallery1.webp" alt="Gallery 1">
-                    <img class="gallery-thumb" src="img/gallery/gallery2.webp" alt="Gallery 2">
-                    <img class="gallery-thumb" src="img/gallery/gallery3.webp" alt="Gallery 3">
-                    <img class="gallery-thumb" src="img/gallery/gallery4.webp" alt="Gallery 4">
-                    <img class="gallery-thumb" src="img/gallery/gallery5.webp" alt="Gallery 5">
-                    <img class="gallery-thumb" src="img/gallery/gallery6.webp" alt="Gallery 6">
+                    <button class="gallery-thumb-btn active-thumb" aria-label="Commercial walk-in cooler" aria-current="true">
+                        <img class="gallery-thumb" src="img/gallery/gallery1.webp" alt="">
+                    </button>
+                    <button class="gallery-thumb-btn" aria-label="Commercial walk-in box with dual access doors">
+                        <img class="gallery-thumb" src="img/gallery/gallery2.webp" alt="">
+                    </button>
+                    <button class="gallery-thumb-btn" aria-label="Steam kettle installation in commercial kitchen">
+                        <img class="gallery-thumb" src="img/gallery/gallery3.webp" alt="">
+                    </button>
+                    <button class="gallery-thumb-btn" aria-label="Commercial hood, flat-top grill, and stacked combi ovens">
+                        <img class="gallery-thumb" src="img/gallery/gallery4.webp" alt="">
+                    </button>
+                    <button class="gallery-thumb-btn" aria-label="Flight-type dish machine with ventilation hood and conveyor">
+                        <img class="gallery-thumb" src="img/gallery/gallery5.webp" alt="">
+                    </button>
+                    <button class="gallery-thumb-btn" aria-label="Flight-type dish machine with ventilation hood">
+                        <img class="gallery-thumb" src="img/gallery/gallery6.webp" alt="">
+                    </button>
                 </div>
             </div>
         </div>
@@ -280,7 +295,7 @@
             <div class="contact-grid">
                 <div class="contact-card">
                     <div class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 5a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 5a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
                     </div>
                     <h3>Get in Touch</h3>
                     <p><a href="tel:3608749826">(360) 874-9826</a></p>
@@ -291,7 +306,7 @@
                 </div>
                 <div class="contact-card">
                     <div class="contact-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
                     <h3>Locations</h3>
                     <h4>Mailing Address</h4>
@@ -313,16 +328,18 @@
             </div>
             <div class="payment-content">
                 <div class="payment-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
                 </div>
-                <p>We offer ACH and debit card processing as our preferred payment method — it keeps costs down for everyone. We also accept all major credit cards; a 3% convenience fee applies for credit card payments.</p>
+                <p>We offer ACH and debit card processing as our preferred payment method. We also accept all major credit cards with a 3% convenience fee applied.</p>
                 <div class="payment-buttons">
                     <a href="https://collectcheckout.com/r/lgg0w" target="_blank" rel="noopener" class="btn btn-primary">ACH &amp; Debit Card</a>
-                    <a href="https://quickclick.com/r/p3l0g" target="_blank" rel="noopener" class="btn btn-secondary">Credit Card</a>
+                    <a href="https://quickclick.com/r/p3l0g" target="_blank" rel="noopener" class="btn btn-outline">Credit Card</a>
                 </div>
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -359,14 +376,14 @@
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
         <div class="lightbox-img-wrap">
             <button class="lightbox-close" id="lbClose" aria-label="Close">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
             <button class="lightbox-prev" id="lbPrev" aria-label="Previous image">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
             </button>
-            <img id="lbImg" src="" alt="Gallery image enlarged">
+            <img id="lbImg" src="" alt="">
             <button class="lightbox-next" id="lbNext" aria-label="Next image">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
             </button>
         </div>
     </div>
@@ -374,7 +391,7 @@
     <!-- Mobile sticky CTA (hidden on desktop) -->
     <div class="mobile-cta">
         <a href="tel:3608749826">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 5a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
+            <svg aria-hidden="true" focusable="false" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 5a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 17.92z"/></svg>
             Call (360) 874-9826
         </a>
     </div>

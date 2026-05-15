@@ -2,9 +2,11 @@
    Design tokens
    ============================================================ */
 :root {
-    --purple:     #34007c;
-    --teal:       #1497ab;
-    --teal-dark:  #0f7a8a;
+    --purple:      #34007c;
+    --purple-dark: #25005a;
+    --teal:        #1497ab;
+    --teal-dark:   #0f7a8a;
+    --white-dark:  #ebebeb;
     --navy:       #0d1c2e;
     --navy-mid:   #162437;
     --text:       #111827;
@@ -23,6 +25,35 @@
     --max-w:      1200px;
     --max-narrow: 860px;
 }
+
+/* ============================================================
+   Skip link
+   ============================================================ */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: 9999;
+    padding: 12px 24px;
+    background: var(--purple);
+    color: #fff;
+    font-weight: 600;
+    font-size: .94rem;
+    border-radius: 0 0 var(--radius) 0;
+    text-decoration: none;
+    transition: top .15s;
+}
+.skip-link:focus { top: 0; }
+
+/* ============================================================
+   Focus styles
+   ============================================================ */
+:focus-visible {
+    outline: 3px solid var(--purple);
+    outline-offset: 3px;
+    border-radius: 3px;
+}
+:focus:not(:focus-visible) { outline: none; }
 
 /* ============================================================
    Reset / base
@@ -81,34 +112,35 @@ p { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
 }
 
 .btn-primary {
-    background: var(--teal);
+    background: var(--purple);
     color: #fff;
-    border-color: var(--teal);
+    border-color: var(--purple);
 }
 .btn-primary:hover {
-    background: var(--teal-dark);
-    border-color: var(--teal-dark);
+    background: var(--purple-dark);
+    border-color: var(--purple-dark);
     color: #fff;
 }
 
 .btn-outline {
     background: #fff;
     color: var(--purple);
-    border-color: #fff;
+    border-color: var(--purple);
 }
 .btn-outline:hover {
-    background: rgba(255,255,255,.88);
-    border-color: rgba(255,255,255,.88);
+    background: var(--white-dark);
+    border-color: var(--purple);
     color: var(--purple);
 }
 
 .btn-secondary {
-    background: transparent;
-    color: var(--teal);
+    background: var(--teal);
+    color: #fff;
     border-color: var(--teal);
 }
 .btn-secondary:hover {
-    background: var(--teal);
+    background: var(--teal-dark);
+    border-color: var(--teal-dark);
     color: #fff;
 }
 
@@ -165,7 +197,7 @@ p { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
     color: #fff !important;
     padding: 5px 14px !important;
 }
-.nav-tab-cta:hover { background: var(--teal) !important; color: #fff !important; }
+.nav-tab-cta:hover { background: var(--purple-dark) !important; color: #fff !important; }
 
 /* Hamburger (mobile only) */
 .nav-toggle {
@@ -469,6 +501,9 @@ section { padding: 80px 24px; }
     overflow: hidden;
     background: #0a0a0a;
     cursor: zoom-in;
+    border: none;
+    padding: 0;
+    display: block;
 }
 
 .preview img {
@@ -494,8 +529,8 @@ section { padding: 80px 24px; }
     box-shadow: var(--shadow-sm);
 }
 .gallery-chevron:hover {
-    background: var(--teal);
-    border-color: var(--teal);
+    background: var(--purple);
+    border-color: var(--purple);
 }
 .gallery-chevron svg { width: 19px; height: 19px; stroke: var(--text); transition: stroke .18s; }
 .gallery-chevron:hover svg { stroke: #fff; }
@@ -507,19 +542,29 @@ section { padding: 80px 24px; }
     justify-content: center;
 }
 
+.gallery-thumb-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: 3px solid transparent;
+    outline-offset: 2px;
+    transition: outline-color .18s;
+}
+.gallery-thumb-btn.active-thumb { outline-color: var(--purple); }
+.gallery-thumb-btn:hover .gallery-thumb { opacity: .9; }
+
 .gallery-thumb {
     height: 76px;
     width: auto;
     border-radius: 8px;
-    cursor: pointer;
     opacity: .62;
-    transition: opacity .18s, outline-color .18s;
+    transition: opacity .18s;
     object-fit: cover;
-    outline: 3px solid transparent;
-    outline-offset: 2px;
+    display: block;
 }
-.gallery-thumb:hover { opacity: .9; }
-.gallery-thumb.active-thumb { opacity: 1; outline-color: var(--teal); }
+.gallery-thumb-btn.active-thumb .gallery-thumb { opacity: 1; }
 
 /* ============================================================
    Lightbox
@@ -570,7 +615,7 @@ section { padding: 80px 24px; }
     box-shadow: var(--shadow-md);
     transition: background .18s;
 }
-.lightbox-close:hover { background: var(--teal); }
+.lightbox-close:hover { background: var(--purple); }
 .lightbox-close svg { width: 18px; height: 18px; stroke: var(--text); transition: stroke .18s; }
 .lightbox-close:hover svg { stroke: #fff; }
 
@@ -727,7 +772,7 @@ footer {
 .footer-col p { font-size: .875rem; color: rgba(255,255,255,.55); margin-bottom: 6px; }
 .footer-col ul { display: grid; gap: 8px; }
 .footer-col a { font-size: .875rem; color: rgba(255,255,255,.55); }
-.footer-col a:hover { color: var(--teal); }
+.footer-col a:hover { color: #fff; }
 
 .footer-bar {
     padding: 20px 0;
